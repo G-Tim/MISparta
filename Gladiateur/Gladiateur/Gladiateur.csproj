@@ -39,6 +39,10 @@
     <Compile Include="Team.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Gladiator.cs" />
+    <Compile Include="Equipment\Equipment.cs" />
+    <Compile Include="Equipment\EquipmentAttack.cs" />
+    <Compile Include="Equipment\EquipmentDefense.cs" />
+    <Compile Include="Equipment\EquipmentBoth.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
