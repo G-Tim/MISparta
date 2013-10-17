@@ -31,7 +31,7 @@ namespace Gladiateur
 		}
 
 		public string getScore() {
-			return this.score;
+			return this.Score;
 		}
 
 
