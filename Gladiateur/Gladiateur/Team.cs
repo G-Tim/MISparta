@@ -17,7 +17,7 @@ namespace Gladiateur
 			}
 		}
 
- 		private string description;
+		private string description;
 		public string Description {
 			get {
 				return description;

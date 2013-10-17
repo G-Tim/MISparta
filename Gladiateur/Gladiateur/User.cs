@@ -49,7 +49,6 @@ namespace Gladiateur
 
 		private DateTime registerDate;
 
-
 		/********** Methods **********/
 		public User (string p_firstname, string p_lastname, string p_alias)
 		{
