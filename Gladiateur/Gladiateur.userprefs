@@ -1,4 +1,4 @@
-﻿<Properties>
+<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Gladiateur/Team.cs">
     <Files>
@@ -15,7 +15,9 @@
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Gladiateur" expanded="True">
+            <Node name="References" expanded="True" />
             <Node name="Equipment" expanded="True" />
+            <Node name="Properties" expanded="True" />
             <Node name="Team.cs" selected="True" />
           </Node>
         </State>
