@@ -18,6 +18,22 @@ namespace Gladiateur
 
 		}
 
+		public string getFirstname() {
+			return this.firstname;
+		}
+
+		public string getLastname() {
+			return this.lastname;
+		}
+
+		public string getAlias() {
+			return this.alias;
+		}
+
+		public string getScore() {
+			return this.score;
+		}
+
 
 		public virtual string SePresenter()
 		{
