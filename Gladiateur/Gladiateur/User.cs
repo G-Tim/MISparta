@@ -4,40 +4,65 @@ namespace Gladiateur
 {
 	public class User
 	{
-		private string firstname, lastname, alias;
-		private DateTime registerDate;
-		private int Score;
+		/********** Attributes **********/
+		private string firstname;
+		public string Firstname {
+			get {
+				return firstname;
+			}
+			set {
+				firstname = value;
+			}
+		}
 
+
+		private string lastname;
+		public string Lastname {
+			get {
+				return lastname;
+			}
+			set {
+				lastname = value;
+			}
+		}
+
+ 		private string alias;
+		public string Alias {
+			get {
+				return alias;
+			}
+			set {
+				alias = value;
+			}
+		}
+
+		
+		private int score;
+		public int Score {
+			get {
+				return score;
+			}
+			set {
+				score = value;
+			}
+		}
+
+		private DateTime registerDate;
+
+
+		/********** Methods **********/
 		public User (string p_firstname, string p_lastname, string p_alias)
 		{
-			this.firstname = p_firstname;
+			this.Firstname = p_firstname;
 			this.lastname = p_lastname;
 			this.alias = p_alias;
-			//			this.registerDate = 10/10/2014;
-			this.Score = 10;
-
+			//this.registerDate = 10/10/2014;
+			this.score = 10;
 		}
 
-		public string getFirstname() {
-			return this.firstname;
-		}
-
-		public string getLastname() {
-			return this.lastname;
-		}
-
-		public string getAlias() {
-			return this.alias;
-		}
-
-		public string getScore() {
-			return this.score;
-		}
-
-
-		public virtual string SePresenter()
+		public string getThis()
 		{
-			return "Je suis " + this.firstname + " " + this.lastname + " et mon Pseudo est " + this.alias + ".";
+			return "JOUEUR | Prénom: " + this.Firstname + " /// Nom: " + this.lastname + " /// Pseudo: " + this.alias + ".";
 		}
 
 	}

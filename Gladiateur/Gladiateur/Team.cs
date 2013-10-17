@@ -6,9 +6,38 @@ namespace Gladiateur
 	{
 		private int id = 0, playedMatchs, wonMatchs, lostMatchs;
 		private double ratioWin;
-		private string userAlias, name, description;
 
-		public Team (string p_name, string p_desc, string p_userAlias)
+		private string name;
+		public string Name {
+			get {
+				return name;
+			}
+			set {
+				name = value;
+			}
+		}
+
+ 		private string description;
+		public string Description {
+			get {
+				return description;
+			}
+			set {
+				description = value;
+			}
+		}
+
+		private User userAlias;
+		public User UserAlias {
+			get {
+				return userAlias;
+			}
+			set {
+				userAlias = value;
+			}
+		}
+
+		public Team (string p_name, string p_desc, User p_userAlias)
 		{
 			this.name = p_name;
 			this.description = p_desc;
@@ -22,7 +51,10 @@ namespace Gladiateur
 			this.ratioWin = this.wonMatchs / this.lostMatchs;
 		}
 
-
+		public string getThis()
+		{
+			return "EQUIPE | Nom: " + this.Name + " /// Description: " + this.Description + " /// Joueur de référence: " + this.UserAlias.Firstname + ".";
+		}
 
 	}
 }
