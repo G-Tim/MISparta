@@ -1,18 +1,30 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gladiateur/Team.cs">
+    <Files>
+      <File FileName="Gladiateur/Gladiator.cs" Line="1" Column="1" />
+      <File FileName="Gladiateur/Program.cs" Line="1" Column="1" />
+      <File FileName="Gladiateur/Team.cs" Line="9" Column="45" />
+      <File FileName="Gladiateur/User.cs" Line="1" Column="1" />
+      <File FileName="Gladiateur/Equipment/Equipment.cs" Line="15" Column="27" />
+      <File FileName="Gladiateur/Equipment/EquipmentAttack.cs" Line="15" Column="4" />
+      <File FileName="Gladiateur/Equipment/EquipmentDefense.cs" Line="14" Column="28" />
+      <File FileName="Gladiateur/Equipment/EquipmentBoth.cs" Line="9" Column="4" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
+        <State expanded="True">
+          <Node name="Gladiateur" expanded="True">
+            <Node name="Equipment" expanded="True" />
+            <Node name="Team.cs" selected="True" />
+          </Node>
+        </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State selected="True" />
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
-      </Pad>
-      <Pad Id="ConnectionManagerPad">
-        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
