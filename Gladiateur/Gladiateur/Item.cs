@@ -52,9 +52,5 @@ namespace Gladiateur
 			return " Item " + this.ID + ": " + this.itemName + ", initiative: " + this.init + ", Défense: " + this.def + ", Attaque: " + this.attack + ", Point d'équipements: " + this.point;
 		}
 
-//		public int PointDeStuff()
-//		{
-//		}
-
 	}
 }

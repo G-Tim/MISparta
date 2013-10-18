@@ -48,6 +48,7 @@
     <Compile Include="Petit_Bouclier_Rond.cs" />
     <Compile Include="Bouclier_rectangulaire.cs" />
     <Compile Include="Casque.cs" />
+    <Compile Include="Stuff.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
