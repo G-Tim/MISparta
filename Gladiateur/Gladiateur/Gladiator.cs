@@ -7,8 +7,9 @@ namespace Gladiateur
 
 		private int id, stuffPoints, stuffValue, totalWin, teamWin, defeats;
 		private double ratio;
-		private string team, name;
+		private string name;
 		private string stuff;
+		private Team team;
 		public int Id {
 			get {
 				return id;
