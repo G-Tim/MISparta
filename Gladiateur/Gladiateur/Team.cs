@@ -5,7 +5,8 @@ namespace Gladiateur
 {
 	public class Team
 	{
-		private int id = 0, playedMatchs, wonMatchs, lostMatchs;
+		private int playedMatchs, wonMatchs, lostMatchs;
+		public int id;
 		private double ratioWin;
 		private string[] gladiatorsNames = new string[3];
 
@@ -69,7 +70,7 @@ namespace Gladiateur
 
 		public string getThis()
 		{
-			return "\t> EQUIPE: " + this.Name + "\n\t\t- Description: " + this.Description + "\n\t\t- Joueur de référence: " + this.UserAlias.Firstname + "\n\t\t";
+			return "\n\t> EQUIPE: " + this.Name + "\n\t\t- Description: " + this.Description + "\t\t";
 		}
 
 		public List<Gladiator> getGladiators() {

@@ -9,7 +9,7 @@ namespace Gladiateur
 		private double ratio;
 		private string name;
 		private string stuff;
-		private Team team;
+		public Team team;
 		public int Id {
 			get {
 				return id;
@@ -35,7 +35,7 @@ namespace Gladiateur
 
 		public string getThis()
 		{
-			return "\t> GLADIATEUR: " + this.name + " | Ordre de passge: " + this.id + "\n";
+			return "\t\t\t* GLADIATEUR: " + this.name + " / Ordre de passage: " + this.id;
 		}
 
 

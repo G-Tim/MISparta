@@ -36,16 +36,20 @@ namespace Gladiateur
 
 			/***** Affichage des infos (joueurs/équipes/gladiateurs) *****/
 			foreach (User b_joueur in LstUsers) {
-				Console.WriteLine ("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+				Console.WriteLine ("\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
 
 				Console.WriteLine (b_joueur.getThis ());
 
 				foreach (Team b_team in LstTeams) {
-					if (b_team.userAlias.Alias == b_joueur.Alias)
+					if (b_team.userAlias.Alias == b_joueur.Alias) {
 						Console.WriteLine (b_team.getThis ());
 
-					foreach (Gladiator b_glad in b_team.getGladiators())
-						Console.WriteLine (b_glad);
+						foreach (Gladiator b_glad in b_team.getGladiators()) {
+							if(b_glad.team.Name == b_team.Name) {
+								Console.WriteLine (b_glad.getThis());
+							}
+						}
+					}
 				}
 			}
 
