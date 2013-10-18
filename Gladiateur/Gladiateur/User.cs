@@ -26,7 +26,7 @@ namespace Gladiateur
 			}
 		}
 
- 		private string alias;
+		private string alias;
 		public string Alias {
 			get {
 				return alias;
@@ -36,7 +36,7 @@ namespace Gladiateur
 			}
 		}
 
-		
+
 		private int score;
 		public int Score {
 			get {
@@ -61,7 +61,7 @@ namespace Gladiateur
 
 		public string getThis()
 		{
-			return "JOUEUR: " + this.alias + "\n\t- Prénom: " + this.Firstname + "\n\t- Nom: " + this.lastname + "\n\n";
+			return "JOUEUR: " + this.alias + "\n\t- Prénom: " + this.firstname + "\n\t- Nom: " + this.lastname + "\n\n";
 		}
 
 	}
