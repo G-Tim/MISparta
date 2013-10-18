@@ -37,7 +37,7 @@ namespace Gladiateur
 			}
 		}
 
-		public Team (string p_name, string p_desc, User p_userAlias)
+		public Team (User p_userAlias, string p_name, string p_desc)
 		{
 			this.name = p_name;
 			this.description = p_desc;
