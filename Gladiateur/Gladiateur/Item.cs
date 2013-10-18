@@ -5,7 +5,7 @@ namespace Gladiateur
 	public class Item
 	{
 		private string p_ItemName;
-		public int init, def, attack, point;
+		public int init, def, attack, point, ID;
 		public string ItemName ()
 		{
 			get{
