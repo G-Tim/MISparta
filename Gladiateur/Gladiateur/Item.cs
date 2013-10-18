@@ -1,4 +1,4 @@
-/*using System;
+using System;
 
 namespace Gladiateur
 {
@@ -35,4 +35,3 @@ namespace Gladiateur
 			// { ID, NomItem, Init, Def, Atk, point} 
 		}
 	}
-*/
