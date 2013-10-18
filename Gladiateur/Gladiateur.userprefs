@@ -1,30 +1,18 @@
-<Properties>
+﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gladiateur/Bouclier_rectangulaire.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gladiateur/Program.cs">
     <Files>
-      <File FileName="Gladiateur/Gladiator.cs" Line="35" Column="1" />
-      <File FileName="Gladiateur/Program.cs" Line="20" Column="4" />
-      <File FileName="Gladiateur/Team.cs" Line="22" Column="9" />
-      <File FileName="Gladiateur/User.cs" Line="70" Column="1" />
-      <File FileName="Gladiateur/Item.cs" Line="38" Column="1" />
-      <File FileName="Gladiateur/Dagues.cs" Line="1" Column="1" />
-      <File FileName="Gladiateur/Epee.cs" Line="1" Column="1" />
-      <File FileName="Gladiateur/Lance.cs" Line="1" Column="1" />
-      <File FileName="Gladiateur/Trident.cs" Line="1" Column="1" />
-      <File FileName="Gladiateur/Filet.cs" Line="1" Column="1" />
-      <File FileName="Gladiateur/Petit_Bouclier_Rond.cs" Line="1" Column="1" />
-      <File FileName="Gladiateur/Bouclier_rectangulaire.cs" Line="1" Column="1" />
-      <File FileName="Gladiateur/Casque.cs" Line="13" Column="1" />
+      <File FileName="Gladiateur/Program.cs" Line="17" Column="89" />
+      <File FileName="Gladiateur/User.cs" Line="64" Column="62" />
+      <File FileName="Gladiateur/Team.cs" Line="43" Column="3" />
+      <File FileName="Gladiateur/Gladiator.cs" Line="11" Column="24" />
+      <File FileName="Gladiateur/Fight.cs" Line="13" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Gladiateur" expanded="True">
-<<<<<<< HEAD
-            <Node name="Team.cs" selected="True" />
-=======
-            <Node name="Bouclier_rectangulaire.cs" selected="True" />
->>>>>>> 240a3033e5821d04d7c4418a7d5766b724a39fba
+            <Node name="Program.cs" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -33,9 +21,6 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
-      </Pad>
-      <Pad Id="ConnectionManagerPad">
-        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
