@@ -7,7 +7,7 @@ namespace Gladiateur
 		public Petit_Bouclier_Rond ()
 		{ 
 			this.ID = 6;
-			this.ItemName = "Petit Bouclier Rond";
+			this.itemName = "Petit Bouclier Rond";
 			this.init = 0;
 			this.def = 20;
 			this.attack = 0;
