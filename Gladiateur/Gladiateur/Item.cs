@@ -32,6 +32,6 @@ namespace Gladiateur
 			this.def = p_def;
 			this.attack = p_attack;
 			this.point = p_point;
-				// { ID, NomItem, Init, Def, Atk, point} 
+			// { ID, NomItem, Init, Def, Atk, point} 
 		}
 	}
