@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Gladiateur
 {
@@ -6,6 +7,9 @@ namespace Gladiateur
 	{
 		private int id = 0, playedMatchs, wonMatchs, lostMatchs;
 		private double ratioWin;
+		private string[] gladiatorsNames = new string[3];
+
+		List<Gladiator> LstGlads = new List<Gladiator> ();
 
 		private string name;
 		public string Name {
@@ -27,7 +31,7 @@ namespace Gladiateur
 			}
 		}
 
-		private User userAlias;
+		public User userAlias;
 		public User UserAlias {
 			get {
 				return userAlias;
@@ -37,26 +41,39 @@ namespace Gladiateur
 			}
 		}
 
-		public Team (User p_userAlias, int p_id, string p_name, string p_desc)
+		public Team (User p_userAlias, int p_id, string p_name, string p_desc, string[] p_gladiators)
 		{
-			if(p_id > 5) {
-				return Console.WriteLine("Impossible de créer une équipe. Le nombre maximal est fixé à 5.");
-			}
 			int id = p_id;
 
 			this.name = p_name;
 			this.description = p_desc;
-			this.userAlias = p_userAlias;;
+			this.userAlias = p_userAlias;
 
 			this.playedMatchs = 5;
 			this.wonMatchs = 3;
 			this.lostMatchs = 2;
 			this.ratioWin = this.wonMatchs / this.lostMatchs;
+
+			// Création des gladiateurs
+			int counter = 1;
+			foreach(string glad in p_gladiators) {
+				if(counter <= 3) {
+					Gladiator gladiator = new Gladiator (this, glad, counter);
+					gladiator.Id = counter; // set de l'ID gladiateur dans l'objet
+					LstGlads.Add (gladiator); // création d'une liste d'objets de type Gladiator
+				}
+				counter++;
+			}
+
 		}
 
 		public string getThis()
 		{
-			return "EQUIPE | Nom: " + this.Name + " /// Description: " + this.Description + " /// Joueur de référence: " + this.UserAlias.Firstname + ".";
+			return "\t> EQUIPE: " + this.Name + "\n\t\t- Description: " + this.Description + "\n\t\t- Joueur de référence: " + this.UserAlias.Firstname + "\n\t\t";
+		}
+
+		public List<Gladiator> getGladiators() {
+				return LstGlads;
 		}
 
 	}

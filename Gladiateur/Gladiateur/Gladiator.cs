@@ -4,17 +4,25 @@ namespace Gladiateur
 {
 	public class Gladiator
 	{
-		private int id, equipmentPoints, equipmentValue, totalWin, teamWin, defeats;
+
+ 		private int equipmentPoints, equipmentValue, totalWin, teamWin, defeats;
 		private double ratio;
 		private string name;
 		private string equipment;
 		private Team team;
 
+		private int id;
+		public int Id {
+			get {
+				return id;
+			}
+			set {
+				id = value;
+			}
+		}
+
 		public Gladiator (Team p_team, string p_name, int p_id /*, string p_equipment*/)
 		{
-			if(p_id > 3) {
-				return Console.WriteLine("Impossible de créer un gladiateur. Le nombre maximal est fixé à 3.");
-			}
 			this.id = p_id;
 			this.name = p_name;
 			this.team = p_team;
@@ -27,11 +35,9 @@ namespace Gladiateur
 			this.equipmentValue = 0;
 		}
 
-
-
-		public virtual string SePresenter()
+		public string getThis()
 		{
-			return "Je suis le gladiateur " + this.name + " et mon ordre de passage est " + id + ".";
+			return "\t> GLADIATEUR: " + this.name + " | Ordre de passge: " + this.id + "\n";
 		}
 
 

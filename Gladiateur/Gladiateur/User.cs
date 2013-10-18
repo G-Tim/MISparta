@@ -61,7 +61,7 @@ namespace Gladiateur
 
 		public string getThis()
 		{
-			return "JOUEUR | Prénom: " + this.Firstname + " /// Nom: " + this.lastname + " /// Pseudo: " + this.alias + ".";
+			return "JOUEUR: " + this.alias + "\n\t- Prénom: " + this.Firstname + "\n\t- Nom: " + this.lastname + "\n\n";
 		}
 
 	}

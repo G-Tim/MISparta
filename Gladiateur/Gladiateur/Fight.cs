@@ -7,6 +7,8 @@ namespace Gladiateur
 		public Fight ()
 		{
 		}
+
+
 	}
 }
 
