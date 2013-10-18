@@ -47,7 +47,7 @@ namespace Gladiateur
 			}
 		}
 
-		private DateTime registerDate;
+		//private DateTime registerDate;
 
 		/********** Methods **********/
 		public User (string p_firstname, string p_lastname, string p_alias)
@@ -55,7 +55,7 @@ namespace Gladiateur
 			this.Firstname = p_firstname;
 			this.lastname = p_lastname;
 			this.alias = p_alias;
-			this.registerDate = 10/10/2014;
+			//this.registerDate = 10/10/2014;
 			this.score = 10;
 		}
 

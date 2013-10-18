@@ -37,13 +37,16 @@ namespace Gladiateur
 			}
 		}
 
-		public Team (User p_userAlias, string p_name, string p_desc)
+		public Team (User p_userAlias, int p_id, string p_name, string p_desc)
 		{
+			if(p_id > 5) {
+				return Console.WriteLine("Impossible de créer une équipe. Le nombre maximal est fixé à 5.");
+			}
+			int id = p_id;
+
 			this.name = p_name;
 			this.description = p_desc;
-			this.userAlias = p_userAlias;
-
-			int id = 1;
+			this.userAlias = p_userAlias;;
 
 			this.playedMatchs = 5;
 			this.wonMatchs = 3;
