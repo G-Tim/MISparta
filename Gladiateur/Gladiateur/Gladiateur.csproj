@@ -40,6 +40,14 @@
     <Compile Include="User.cs" />
     <Compile Include="Gladiator.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Dagues.cs" />
+    <Compile Include="Epee.cs" />
+    <Compile Include="Lance.cs" />
+    <Compile Include="Trident.cs" />
+    <Compile Include="Filet.cs" />
+    <Compile Include="Petit_Bouclier_Rond.cs" />
+    <Compile Include="Bouclier_rectangulaire.cs" />
+    <Compile Include="Casque.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,7 +14,7 @@ namespace Gladiateur
 			//Gladiator Spartacus = new Gladiator ("Spartacus", 1, "Team A", "Trident, Bouclier");
 			//Console.WriteLine (Spartacus.SePresenter ());
 
-			/***** Initialisation des joueurs *****/
+			// Initialisation des joueurs
 			List<User> LstUsers = new List<User> ();
 
 			User joueur1 = new User("Tim", "G.", "Team Warior-Boss-JteDémonte");
@@ -26,19 +26,19 @@ namespace Gladiateur
 			User joueur4 = new User("Gisèle", "F.", "Team Killer-Boss-JteKen");
 				LstUsers.Add (joueur4);
 
-			/***** Initialisation des équipes *****/
+			// Initialisation des équipes
 			List<Team> LstTeams = new List<Team> ();
 
-			Team team1 = new Team(joueur1, "Les Superwariors", "Une team qui mise tout sur la force.");
+			Team team1 = new Team ("Les Superwariors", "Une team qui mise tout sur la force.", joueur1);
 			LstTeams.Add (team1);
-			Team team2 = new Team(joueur2, "Killers", "Le team des killers !");
+			Team team2 = new Team ("Killers", "Le team des killers !", joueur2);
 			LstTeams.Add (team2);
-			Team team3 = new Team(joueur3, "Nyancats", "Les ch'arc-en-ciel en force !");
+			Team team3 = new Team ("Nyancats", "Les ch'arc-en-ciel en force !", joueur3);
 			LstTeams.Add (team3);
-			Team team4 = new Team(joueur4, "Ligue des justiciers", "Les superjusticiers sont de retour.");
+			Team team4 = new Team ("Ligue des justiciers", "Les superjusticiers sont de retour.", joueur4);
 			LstTeams.Add (team4);
 
-			/***** Affichage des infos joueurs & équipes *****/
+			// Affichage des infos joueurs & équipes
 			foreach (User b_joueur in LstUsers) {
 				Console.WriteLine(	b_joueur.getThis()	);
 			}
