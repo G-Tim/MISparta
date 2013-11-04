@@ -7,7 +7,7 @@ namespace Gladiateur
 		public Epee ()
 		{
 			this.ID = 2;
-			this.itemName = "Epée";
+			this.ItemName = "Epée";
 			this.init = 2;
 			this.def = 0;
 			this.attack = 70;

@@ -36,6 +36,14 @@ namespace Gladiateur
 
 				Console.WriteLine (b_joueur.getThis ());
 
+
+		// ****  affichage des items: méthode en provenance de item.cs, pas de parametre. L'item n° correspond à l'id de l'item. **** //
+
+				Dagues Gueda = new Dagues ();
+				Console.WriteLine (Gueda.PresenterStuff ());
+
+		// ***************************************************************************************************************************//
+
 				foreach (Team b_team in LstTeams) {
 					if (b_team.userAlias.Alias == b_joueur.Alias) {
 						Console.WriteLine (b_team.getThis ());

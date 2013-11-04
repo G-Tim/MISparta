@@ -17,18 +17,18 @@ namespace Gladiateur
 			}
 		}
 
-		//                public string ItemName
-		//                {
-		//                        get{
-		//                                return ItemName;  
-		//                        }
-		//                        set{
-		////                                if( )//condition sur le nombre de point stuff restant
-		////                                {
-		//                                        this.ItemName = 5;
-		////                                }
-		//                        }
-		//                }
+//		public string ItemName
+//		{
+//			get{
+//				return ItemName;  
+//			}
+//			set{
+////				if( )//condition sur le nombre de point stuff restant
+////				{
+//					this.ItemName = 5;
+////				}
+//			}
+//		}
 
 
 		public Item ()

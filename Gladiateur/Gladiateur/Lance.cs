@@ -7,7 +7,7 @@ namespace Gladiateur
 		public Lance ()
 		{
 			this.ID = 3;
-			this.itemName = "Lance";
+			this.ItemName = "Lance";
 			this.init = 4;
 			this.def = 0;
 			this.attack = 50;

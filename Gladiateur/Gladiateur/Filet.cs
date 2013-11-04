@@ -7,7 +7,7 @@ namespace Gladiateur
 		public Filet ()
 		{
 			this.ID = 5;
-			this.itemName = "Filet";
+			this.ItemName = "Filet";
 			this.init = 5;
 			this.def = 0;
 			this.attack = 30;

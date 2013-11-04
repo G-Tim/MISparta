@@ -47,8 +47,14 @@
     <Compile Include="Filet.cs" />
     <Compile Include="Lance.cs" />
     <Compile Include="Petit_Bouclier_Rond.cs" />
+<<<<<<< HEAD
     <Compile Include="Stuff.cs" />
     <Compile Include="Trident.cs" />
+=======
+    <Compile Include="Bouclier_rectangulaire.cs" />
+    <Compile Include="Casque.cs" />
+    <Compile Include="Stuff.cs" />
+>>>>>>> 12825a083b572c52ad43d4d05de1b581f043fc8d
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
