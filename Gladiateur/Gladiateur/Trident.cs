@@ -7,7 +7,7 @@ namespace Gladiateur
 		public Trident () 
 		{
 			this.ID = 4;
-			this.ItemName = "Trident";
+			this.itemName = "Trident";
 			this.init = 3;
 			this.def = 10;
 			this.attack = 40;
@@ -15,4 +15,3 @@ namespace Gladiateur
 		}
 	}
 }
-

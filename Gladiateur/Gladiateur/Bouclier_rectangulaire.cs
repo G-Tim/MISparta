@@ -7,7 +7,7 @@ namespace Gladiateur
 		public Bouclier_rectangulaire ()
 		{
 			this.ID = 7;
-			this.ItemName = "Bouclier rectangulaire";
+			this.itemName = "Bouclier rectangulaire";
 			this.init = 0;
 			this.def = 30;
 			this.attack = 0;
