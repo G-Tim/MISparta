@@ -18,17 +18,24 @@ namespace Gladiateur
 			User joueur3 = new User ("Nico", "J.", "Nicolas-Ambassadeur-des-Contrées-du-Nord"); LstUsers.Add (joueur3);
 			User joueur4 = new User ("Guigui", "F.", "Guillaume-le-Grand");                     LstUsers.Add (joueur4);
 
-			/***** Initialisation des équipes & gladiateurs *****/
+			/***** Initialisation des équipes *****/
 			List<Team> LstTeams = new List<Team> ();
 			// joueur1
-			Team team1_j1 = new Team (joueur1, 1, "Les Superwariors", "Une team qui mise tout sur la force.", new String[3] { "Marcel", "Henri", "Félix" });                     LstTeams.Add (team1_j1);
+			Team team1_j1 = new Team (joueur1, 1, "Les Superwariors", "Une team qui mise tout sur la force." /*, new String[3] { "Marcel", "Henri", "Félix" }*/);                     LstTeams.Add (team1_j1);
 			// joueur2
-			Team team1_j2 = new Team (joueur2, 1, "Killers", "La team des killers !", new String[3] { "Hervé", "Steve", "Mamadou" });                                            LstTeams.Add (team1_j2);
+			Team team1_j2 = new Team (joueur2, 1, "Killers", "La team des killers !" /*, new String[3] { "Hervé", "Steve", "Mamadou" }*/);                                            LstTeams.Add (team1_j2);
 			// joueur3
-			Team team1_j3 = new Team (joueur3, 1, "Nyancats", "Les ch'arc-en-ciel en force !", new String[3] { "Jonas", "John", "Jackie" });                                     LstTeams.Add (team1_j3);
+			Team team1_j3 = new Team (joueur3, 1, "Nyancats", "Les ch'arc-en-ciel en force !" /*, new String[3] { "Jonas", "John", "Jackie" }*/);                                     LstTeams.Add (team1_j3);
 			// joueur4
-			Team team1_j4 = new Team (joueur4, 1, "Ligue des justiciers", "Les superjusticiers sont de retour.", new String[3] { "Jean-Pierre", "Jean-René", "Jean-François" }); LstTeams.Add (team1_j4);
+			Team team1_j4 = new Team (joueur4, 1, "Ligue des justiciers", "Les superjusticiers sont de retour." /*, new String[3] { "Jean-Pierre", "Jean-René", "Jean-François" }*/); LstTeams.Add (team1_j4);
 
+			/***** Initialisation des gladiateurs *****/
+			// joueur1
+			Gladiator glad1_team1_j1 = new Gladiator (team1_j1, "Marcel", new String[] { "Bouclier_rectangulaire", "Epée" } );
+
+			/***** Initialisation des équipements *****/
+			// joueur1
+			//Stuff stuff1_team1_j1 = new Stuff ( team1_j1.getGladiators()[0], new Bouclier_rectangulaire() );
 
 			/***** Affichage des infos (joueurs/équipes/gladiateurs) *****/
 			foreach (User b_joueur in LstUsers) {
@@ -37,12 +44,12 @@ namespace Gladiateur
 				Console.WriteLine (b_joueur.getThis ());
 
 
-		// ****  affichage des items: méthode en provenance de item.cs, pas de parametre. L'item n° correspond à l'id de l'item. **** //
+			// ****  affichage des items: méthode en provenance de item.cs, pas de parametre. L'item n° correspond à l'id de l'item. **** //
 
 				Dagues Gueda = new Dagues ();
 				Console.WriteLine (Gueda.PresenterStuff ());
 
-		// ***************************************************************************************************************************//
+			// ***************************************************************************************************************************//
 
 				foreach (Team b_team in LstTeams) {
 					if (b_team.userAlias.Alias == b_joueur.Alias) {

@@ -8,7 +8,6 @@ namespace Gladiateur
 		private int playedMatchs, wonMatchs, lostMatchs;
 		public int id;
 		private double ratioWin;
-		private string[] gladiatorsNames = new string[3];
 
 		List<Gladiator> LstGlads = new List<Gladiator> ();
 
@@ -42,7 +41,7 @@ namespace Gladiateur
 			}
 		}
 
-		public Team (User p_userAlias, int p_id, string p_name, string p_desc, string[] p_gladiators)
+		public Team (User p_userAlias, int p_id, string p_name, string p_desc)
 		{
 			int id = p_id;
 
@@ -56,7 +55,7 @@ namespace Gladiateur
 			this.ratioWin = this.wonMatchs / this.lostMatchs;
 
 			// Création des gladiateurs
-			int counter = 1;
+			/*int counter = 1;
 			foreach(string glad in p_gladiators) {
 				if(counter <= 3) {
 					Gladiator gladiator = new Gladiator (this, glad, counter);
@@ -64,7 +63,7 @@ namespace Gladiateur
 					LstGlads.Add (gladiator); // création d'une liste d'objets de type Gladiator
 				}
 				counter++;
-			}
+			}*/
 
 		}
 

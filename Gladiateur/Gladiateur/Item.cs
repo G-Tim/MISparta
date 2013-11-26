@@ -6,11 +6,11 @@ namespace Gladiateur
 	{
 
 		public int init, def, attack, point, ID;
-		public string itemName;
 
+		public string itemName;
 		public string ItemName {
 			get {
-				return itemName; 
+				return itemName;
 			}
 			set {
 				itemName = value;
@@ -30,26 +30,42 @@ namespace Gladiateur
 //			}
 //		}
 
+		public void createItem( string itemname ) {
+			switch(itemname) {
+				case "Bouclier_rectangulaire":
+					new Bouclier_rectangulaire ();
+					break;
+				case "Casque":
+					new Casque ();
+					break;
+				case "Dagues":
+					new Dagues ();
+					break;
+				case "Epée":
+					new Epee ();
+					break;
+				case "Filet":
+					new Filet ();
+					break;
+				case "Lance":
+					new Lance ();
+					break;
+				case "Petit_Bouclier_Rond":
+					new Petit_Bouclier_Rond ();
+					break;
+				case "Trident":
+					new Trident ();
+					break;
+				default:
+					break;
 
-		public Item ()
-		{
-
-		}
-		public Item (int p_ID, string p_ItemName, int p_init, int p_def, int p_attack, int p_point)
-		{
-			this.ID = p_ID;
-			this.itemName = p_ItemName;
-			this.init = p_init;
-			this.def = p_def;
-			this.attack = p_attack;
-			this.point = p_point;
-			// { ID, NomItem, Init, Def, Atk, point} 
+			}
 		}
 
 
 		public string PresenterStuff()
 		{
-			return " Item " + this.ID + ": " + this.itemName + ", initiative: " + this.init + ", Défense: " + this.def + ", Attaque: " + this.attack + ", Point d'équipements: " + this.point;
+			return " Item " + this.ID + ": " + this.ItemName + ", initiative: " + this.init + ", Défense: " + this.def + ", Attaque: " + this.attack + ", Point d'équipements: " + this.point;
 		}
 
 	}

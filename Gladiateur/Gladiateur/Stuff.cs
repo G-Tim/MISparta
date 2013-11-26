@@ -4,9 +4,22 @@ namespace Gladiateur
 {
 	public class Stuff
 	{
-		public Stuff (p_init, p_def, p_attack, p_point)
-		{
-
+		public Gladiator glad;
+		public Item item;
+		public Item Item {
+			get {
+				return item;
+			}
+			set {
+				item = value;
+			}
 		}
+
+		public Stuff ( string p_itemname )
+		{
+			this.item = new Item();
+			item.createItem (p_itemname);
+		}
+
 	}
 }
