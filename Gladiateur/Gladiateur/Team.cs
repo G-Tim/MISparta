@@ -41,8 +41,12 @@ namespace Gladiateur
 			}
 		}
 
-		public Team (User p_userAlias, int p_id, string p_name, string p_desc)
+		public Team (User p_userAlias, Gladiator[] p_glads, int p_id, string p_name, string p_desc)
 		{
+			for(var i=0; i<3; i++) {
+				LstGlads.Add(p_glads[i]);
+			}
+
 			int id = p_id;
 
 			this.name = p_name;
@@ -72,8 +76,11 @@ namespace Gladiateur
 			return "\n\t> EQUIPE: " + this.Name + "\n\t\t- Description: " + this.Description + "\t\t";
 		}
 
-		public List<Gladiator> getGladiators() {
-				return LstGlads;
+		public string getGladiators()
+		{
+			foreach(Gladiator glads in LstGlads) {
+				return "\n\t> GLADIATEUR: [nom] " + glads.Name + "";
+			}
 		}
 
 	}

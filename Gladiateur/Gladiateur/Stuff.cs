@@ -17,8 +17,35 @@ namespace Gladiateur
 
 		public Stuff ( string p_itemname )
 		{
-			this.item = new Item();
-			item.createItem (p_itemname);
+			switch(p_itemname) {
+				case "Bouclier_rectangulaire":
+				this.Item = new Bouclier_rectangulaire ();
+				break;
+				case "Casque":
+				this.Item = new Casque ();
+				break;
+				case "Dagues":
+				this.Item = new Dagues ();
+				break;
+				case "Epée":
+				this.Item = new Epee ();
+				break;
+				case "Filet":
+				this.Item = new Filet ();
+				break;
+				case "Lance":
+				this.Item = new Lance ();
+				break;
+				case "Petit_Bouclier_Rond":
+				this.Item = new Petit_Bouclier_Rond ();
+				break;
+				case "Trident":
+				this.Item = new Trident ();
+				break;
+				default:
+				break;
+
+			}
 		}
 
 	}
